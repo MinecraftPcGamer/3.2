@@ -38,7 +38,7 @@ html {
   text-align: center;
   padding: 50px 5vw;
   color: var(--font);
-  animation: scroll 60s linear infinite;
+  animation: scroll 80s linear infinite;
 }
 
 .header h1 {
