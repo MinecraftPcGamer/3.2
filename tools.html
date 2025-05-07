@@ -27,12 +27,24 @@ idk what to put here yet just maybe cool stuff
   </div>
   <div class="section blue">
   
-<a href="aboutblank.html" target="_self">about blank</a>
+
+<script>
+ function aboutblanker(); { 
+  // ask for url
+  var url = prompt("Enter a URL to open in about:blank:", "https://");
+  // about:blank
+  if (url) {
+    var win = window.open("about:blank");
+    win.location = url;
+  }
+
+</script>
+<button onclick="aboutblanker();"> about:blanker </button>
     
-<!-- <a href="proxy.html" target="_self">proxy</a>
+ <a href="proxy.html" target="_self">proxy</a>
  <a href="shims.html" target="_self">shims</a>
 
-    <p>more stuff to come soon</p>  --->
+    <p>more stuff to come soon</p>  
 
   <div class="section blue">
     <h3>
