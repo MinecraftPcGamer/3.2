@@ -14,7 +14,39 @@
 </head>
 
 <body>
-  
+<script>
+  function cloakThatStuff(url) {
+    const win = window.open('about:blank', '_blank');
+    win.document.write(`
+        <!DOCTYPE html>
+        <html>
+        <head>function checkAuthKey() {
+    const storedKey = localStorage.getItem('onyxAuth');
+    // If no key is stored, kick to authkey.html
+    if (!storedKey) {
+        window.location.replace('authkey.html');
+    }
+    // Optionally, add expiry check if you store expiry as a date
+    // else, just having the key is enough
+}
+
+            <style>
+                body { margin: 0; overflow: hidden; }
+                iframe { 
+                    border: none; 
+                    width: 100vw; 
+                    height: 100vh; 
+                }
+            </style>
+        </head>
+        <body>
+            <iframe src="${url}"></iframe>
+        </body>
+        </html>
+    `);
+    win.document.close();
+}
+</script>
     <div class="header">
       <h1>tools</h1>
       
