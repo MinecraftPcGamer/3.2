@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+  <title>3.2 Quadratics</title>
+
+  <link rel="icon" type="image/x-icon" href="icon.png" />
+  <link rel="stylesheet" href="main.css" />
+ 
+  <link rel="icon" href="icon.png" type="image/x-icon"/>
+
+  <base target="_blank" />
+</head>
+
+<body>
+<script>
+  function cloakThatStuff(url) {
+    const win = window.open('about:blank', '_blank');
+    win.document.write(`
+        <!DOCTYPE html>
+        <html>
+        <head>function checkAuthKey() {
+    const storedKey = localStorage.getItem('onyxAuth');
+    // If no key is stored, kick to authkey.html
+    if (!storedKey) {
+        window.location.replace('authkey.html');
+    }
+    // Optionally, add expiry check if you store expiry as a date
+    // else, just having the key is enough
+}
+
+            <style>
+                body { margin: 0; overflow: hidden; }
+                iframe { 
+                    border: none; 
+                    width: 100vw; 
+                    height: 100vh; 
+                }
+            </style>
+        </head>
+        <body>
+            <iframe src="${url}"></iframe>
+        </body>
+        </html>
+    `);
+    win.document.close();
+}
+</script>
+    <div class="header">
+      <h1>linux vm</h1>
+      
+    <a href="." target="_self">Back to home</a>
+
+    <p class="acronym">
+a simple linux vm running in your browser
+      
+    </p>
+  </div>
+  <div class="section blue">
+  
+
+
+<button onclick="CloakThatStuff("thatboyo.github.io/arch-vm");"> open in about:blank (beta may not work)</button>
+    
+
+ <a href="/arch-vm" target="_self">open vm</a>
+
+
+
+  <div class="section blue">
+    <h3>
+      <a href="Disclaimer.html" target="_self">Disclaimer + Terms of Service</a>
+      <a href="credits.html" target="_self">Credits</a>
+      <a href="help.html" target="_self">Help</a>
+    </h3>
+    <p>
+      
+  </div>
+</body>
+
+</html> 
